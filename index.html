@@ -1,1 +1,257 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Afreet Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: single readable column, quiet header band, numbered sections that follow the policy's own numbering. */
+:root {
+  --bg: #f6f8f8;
+  --surface: #ffffff;
+  --fg: #1b2427;
+  --muted: #5a676b;
+  --accent: #0f766e;
+  --rule: #dce3e4;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101719;
+    --surface: #162023;
+    --fg: #e4eaeb;
+    --muted: #9aa8ac;
+    --accent: #4fd1c0;
+    --rule: #243235;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101719;
+  --surface: #162023;
+  --fg: #e4eaeb;
+  --muted: #9aa8ac;
+  --accent: #4fd1c0;
+  --rule: #243235;
+  color-scheme: dark;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 700px; margin: 0 auto; }
+header { padding-bottom: 28px; border-bottom: 1px solid var(--rule); margin-bottom: 8px; }
+.eyebrow {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent); font-weight: 600; margin: 0 0 10px;
+}
+h1 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(28px, 6vw, 38px); line-height: 1.15; margin: 0 0 12px;
+  text-wrap: balance;
+}
+.updated { color: var(--muted); font-size: 14px; margin: 0; }
+section { padding-block: 26px; border-bottom: 1px solid var(--rule); }
+section:last-of-type { border-bottom: 0; }
+h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: 21px;
+  line-height: 1.3; margin: 0 0 12px; text-wrap: balance;
+}
+h2 .n { color: var(--accent); margin-right: 8px; font-variant-numeric: tabular-nums; }
+h3 { font-size: 16px; font-weight: 600; margin: 20px 0 6px; }
+p { margin: 0 0 12px; max-width: 65ch; }
+ul { margin: 0 0 12px; padding-left: 22px; max-width: 65ch; }
+li { margin-bottom: 4px; }
+li::marker { color: var(--accent); }
+a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.perms { display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; margin: 0 0 14px; }
+.perm { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; background: var(--surface); padding: 12px 14px; }
+.perm b { font-weight: 600; }
+.perm span { color: var(--muted); }
+@media (max-width: 480px) { .perm { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+.contact { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 12px; }
+.contact dt { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.contact dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.email { user-select: all; }
+button {
+  font: inherit; font-size: 13px; font-weight: 500; color: var(--accent); background: transparent;
+  border: 1px solid var(--rule); border-radius: 6px; padding: 4px 10px; cursor: pointer;
+}
+button:hover { border-color: var(--accent); }
+</style>
+
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Al Afreet (العفريت)</h1>
+    <p class="updated">Last updated: November 11, 2026</p>
+  </header>
+
+  <section>
+    <h2><span class="n">1</span>Introduction</h2>
+    <p>Welcome to Al Afreet ("the App", "we", "our", or "us").</p>
+    <p>We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how information is accessed, collected, used, stored, and protected when you use the Al Afreet mobile application.</p>
+    <p>By using our application, you agree to the practices described in this Privacy Policy.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>Information We Collect</h2>
+
+    <h3>2.1 Account Information</h3>
+    <p>Al Afreet allows users to optionally sign in using their Google accounts through Supabase Authentication.</p>
+    <p>When you choose to sign in, we may collect and process:</p>
+    <ul>
+      <li>Email address.</li>
+      <li>Unique account identifier.</li>
+      <li>Basic profile information, such as your name and profile picture, when provided.</li>
+    </ul>
+    <p>This information is used to authenticate users and provide account-related services.</p>
+    <p>You can use the application's available features without signing in.</p>
+
+    <h3>2.2 Contacts Information</h3>
+    <p>The application may request access to your device contacts to provide contact-related features.</p>
+    <ul>
+      <li>Contacts are accessed and processed locally on your device.</li>
+      <li>Contact names and phone numbers are not uploaded to our servers.</li>
+      <li>We do not share, sell, or disclose your contacts to third parties.</li>
+    </ul>
+
+    <h3>2.3 Camera Information</h3>
+    <p>The application may request camera access to scan QR codes and barcodes.</p>
+    <p>Camera access is used only when you activate the scanning functionality. Camera images are not collected or uploaded to our servers through this feature.</p>
+
+    <h3>2.4 Device Information</h3>
+    <p>The application may process basic technical information and locally stored preferences necessary to operate its features and improve your experience.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>How We Use Information</h2>
+    <p>We use collected or processed information to:</p>
+    <ul>
+      <li>Provide and maintain application functionality.</li>
+      <li>Authenticate users who choose to sign in.</li>
+      <li>Manage user accounts.</li>
+      <li>Provide QR code and barcode generation and scanning features.</li>
+      <li>Improve application performance and stability.</li>
+      <li>Protect the application against unauthorized access and misuse.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Third-Party Services</h2>
+    <h3>4.1 Supabase</h3>
+    <p>We use Supabase to provide authentication and backend services.</p>
+    <p>When you sign in, your authentication information may be processed and stored through Supabase infrastructure.</p>
+    <p>For more information, please visit: <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></p>
+
+    <h3>4.2 Google Sign-In</h3>
+    <p>Users can optionally authenticate using their Google accounts.</p>
+    <p>Google processes authentication information according to its own privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>Advertising and Data Sharing</h2>
+    <p>Al Afreet does not display advertisements.</p>
+    <p>We do not sell, rent, or trade your personal information.</p>
+    <p>We do not share personal information with third parties for advertising purposes.</p>
+    <p>Information may be disclosed only when necessary to provide application services, comply with applicable laws, or protect the security and rights of users.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>Data Storage and Security</h2>
+    <p>We take reasonable technical and organizational measures to protect user information against unauthorized access, alteration, disclosure, or destruction.</p>
+    <p>Account-related information is processed through Supabase services.</p>
+    <p>Contacts accessed through the application remain locally on your device and are not uploaded to our servers.</p>
+    <p>However, no method of electronic storage or transmission over the Internet can be guaranteed to be completely secure.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>Data Retention and Deletion</h2>
+    <p>We retain personal information only for as long as necessary to provide our services and fulfill the purposes described in this Privacy Policy.</p>
+    <p>Users may request deletion of their account and associated personal information by contacting us at: <span class="email">mohammed.nazmy1@gmail.com</span></p>
+    <p>Locally stored information can be removed by clearing the application's data or uninstalling the application, where applicable.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">8</span>Application Permissions</h2>
+    <p>Depending on the features you use, Al Afreet may request access to:</p>
+    <div class="perms">
+      <div class="perm"><b>Contacts</b><span>To provide contact-related functionality.</span></div>
+      <div class="perm"><b>Camera</b><span>To scan QR codes and barcodes.</span></div>
+      <div class="perm"><b>Flashlight</b><span>To assist with scanning in low-light conditions, if supported.</span></div>
+    </div>
+    <p>You can manage or revoke these permissions through your Android device settings. Revoking permissions may affect the functionality of related features.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">9</span>Children's Privacy</h2>
+    <p>Al Afreet is not specifically designed to collect personal information from children.</p>
+    <p>We do not knowingly collect personal information from children without appropriate legal authorization.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">10</span>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our application or privacy practices.</p>
+    <p>Any updates will be published on this page with a revised effective date.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">11</span>Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+    <dl class="contact">
+      <div>
+        <dt>Application Name</dt>
+        <dd>Al Afreet (العفريت)</dd>
+      </div>
+      <div>
+        <dt>Contact Email</dt>
+        <dd class="row">
+          <span class="email" id="email">mohammed.nazmy1@gmail.com</span>
+          <button type="button" id="copy">Copy</button>
+        </dd>
+      </div>
+    </dl>
+  </section>
+</main>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy');
+  var el = document.getElementById('email');
+  function select() {
+    try {
+      var r = document.createRange();
+      r.selectNodeContents(el);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+    } catch (e) {}
+  }
+  btn.addEventListener('click', function () {
+    var done = function () {
+      btn.textContent = 'Copied';
+      setTimeout(function () { btn.textContent = 'Copy'; }, 1800);
+    };
+    try {
+      navigator.clipboard.writeText(el.textContent.trim()).then(done, select);
+    } catch (e) { select(); }
+  });
+})();
+</script>
+
+</body>
+</html>
